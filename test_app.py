@@ -10,4 +10,4 @@ def client():
 
 def test_main(client):
     rv = client.get('/')
-    assert b'Hello World!' in rv.data
+    assert b'Assert will fail' in rv.data
